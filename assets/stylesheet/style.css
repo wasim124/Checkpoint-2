@@ -1,0 +1,446 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/** CSS Start Here **/
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Open Sans", sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+/** General **/
+
+.container {
+	max-width: 1330px;
+	margin: 0 auto;
+	padding: 0 32px;
+}
+
+.flex {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+.heading {
+	margin-top: 100px;
+	text-align: center;
+}
+
+.heading h2 {
+	font-size: 26px;
+	text-decoration-line: underline;
+	font-weight: 600;
+}
+
+.heading p {
+	font-size: 18px;
+	margin-top: 10px;
+	font-weight: 100;
+	margin-bottom: 40px;
+}
+
+/** HEader **/
+.header {
+	position: fixed;
+	width: 100%;
+	top: 70px;
+}
+
+.b-container {
+	width: 80%;
+	margin: 0 auto;
+	background: white;
+}
+
+.brand a {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 30px;
+	color: orangered;
+	font-weight: 700;
+}
+
+.brand a img {
+	vertical-align: middle;
+}
+
+.nav a {
+	text-decoration: none;
+	text-transform: uppercase;
+	vertical-align: middle;
+	font-size: 15px;
+	font-weight: 500;
+	color: rgb(184, 170, 170);
+	margin: 0 22px;
+}
+
+span {
+	color: #ea513e;
+	font-weight: 700;
+}
+
+
+/** section-1 **/
+
+.section-1 {
+	text-align: center;
+	background-image: linear-gradient(#00000071, rgba(0, 0, 0, 0.329)),
+		url(../media/banner.jpg);
+	height: 80vh;
+	background-size: cover;
+}
+
+.fa-brands {
+	font-size: 18px;
+	color: black;
+	background-color: white;
+	margin-top: 20px;
+	margin-left: 18px;
+	border: 10px solid white;
+	border-radius: 50%;
+	align-items: center;
+}
+
+.fa-basketball {
+	font-size: 15px;
+	color: black;
+	background-color: white;
+	margin-top: 20px;
+	margin-left: 18px;
+	border: 10px solid white;
+	border-radius: 50%;
+	align-items: center;
+}
+
+.section1-heading {
+	padding-top: 40vh;
+	color: white;
+}
+
+.section1-heading h1 {
+	font-size: 40px;
+	border-bottom: 3px solid #fff;
+	width: 31%;
+	margin: 0 auto;
+	font-family: "Roboto", sans-serif;
+	font-weight: 600;
+}
+
+.section1-heading h3 {
+	font-size: 16px;
+	margin-top: 15px;
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+}
+
+.btn {
+	background-color: #ea513e;
+	color: white;
+	padding: 12px 18px;
+	border: none;
+	margin-top: 15px;
+}
+
+/**section-2 **/
+
+.icon-service {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 20%;
+	height: 250px;
+	font-size: 30px;
+	color: white;
+}
+
+.bg-green {
+	background-color: #5cbd9d;
+}
+
+.bg-orange {
+	background-color: #e67f31;
+}
+
+.bg-blue {
+	background-color: #3998db;
+}
+
+.bg-light-green {
+	background-color: #68cd73;
+}
+
+/** section-3 **/
+
+.portfolio {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.portfolio img {
+	width: 22%;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+
+/** Section-4 **/
+
+.team {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 40px;
+}
+
+.team img {
+	width: 23%;
+	border-radius: 50%;
+}
+
+/** section-5 **/
+
+.skill h2 {
+	font-size: 26px;
+	text-decoration: none;
+	font-weight: 400;
+	font-style: italic;
+}
+
+.skill p {
+	font-size: 15px;
+	margin-top: 10px;
+	font-weight: 100;
+	margin-bottom: 40px;
+	color: rgb(184, 170, 170);
+	font-style: italic;
+}
+
+.about-skills {
+	width: 67%;
+}
+
+.about-skills p {
+	margin-bottom: 30px;
+	font-size: 18px;
+	color: rgb(116, 108, 108);
+	font-weight: 400;
+}
+
+.progressbar-parent {
+	width: 30%;
+
+}
+
+.bgcolor {
+	background-color: rgb(226, 216, 216);
+	border: none;
+}
+
+.progressbar {
+	background-color: #ea513e;
+	height: 32px;
+	font-size: 15px;
+	color: white;
+	padding-left: 15px;
+	margin-bottom: 10px;
+	font-weight: 600;
+	padding-top: 5px;
+}
+
+.width-photo {
+	width: 90%;
+}
+
+.width-htlm {
+	width: 80%;
+}
+
+.width-devel {
+	width: 70%;
+}
+
+.width-mark {
+	width: 80%;
+}
+
+/** section-6 **/
+
+.about-contact {
+	width: 55%;
+	margin-top: 50px;
+}
+
+.about-contact p {
+	color: rgba(82, 79, 79, 0.589);
+}
+
+.contact-form {
+	width: 35%;
+	margin-top: 50px;
+}
+
+.input {
+	width: 100%;
+	margin: 0 auto;
+	padding: 16px;
+	margin-bottom: 10px;
+}
+
+.btn-2 {
+	width: 100%;
+	background-color: #ea513e;
+	color: white;
+	padding: 10px 18px;
+	border: none;
+}
+
+/** Footer **/
+.copy-right {
+	color: rgba(82, 79, 79, 0.589);
+	margin-top: 200px;
+	margin-bottom: 20px;
+}
+
+.btn-3 {
+	margin-top: 200px;
+	background-color: #ea513e;
+	;
+	color: white;
+	padding: 12px 18px;
+	border: none;
+	margin-bottom: 20px;
+}
+
+/* gallery */
+.gallery-section {
+	display: flex;
+	justify-content: space-between;
+}
+
+.home {
+	background-color: #ea513e;
+	width: 30%;
+	height: 100vh;
+	position: fixed;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	padding: 24px;
+}
+
+.flex-color a {
+	color: white;
+	font-size: 40px;
+}
+
+.home-design a {
+	font-size: 13px;
+	color: white;
+	border: 2px solid white;
+	padding: 4px 10px;
+	border-radius: 5px;
+	text-decoration: none;
+}
+
+.home-about h3 {
+	font-size: 30px;
+	color: white;
+	font-weight: 700;
+}
+
+.home-about p {
+	font-size: 18px;
+	font-weight: 600;
+	margin-bottom: 40px;
+}
+
+.gallery-img h1 {
+	font-size: 40px;
+	text-align: center;
+	margin-bottom: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.gallery-flex {
+	display: flex;
+	flex-direction: row;
+	display: block;
+	padding-left: 10px;
+}
+
+.gallery-img {
+	margin-left: 30%;
+}
+
+.gallery-flex img {
+	margin-bottom: 24px;
+	border: 2px solid black;
+	width: 450px;
+}
+
+
+.flex-se {
+	display: flex;
+	justify-content: space-evenly;
+}
